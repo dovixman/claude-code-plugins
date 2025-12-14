@@ -111,7 +111,7 @@ jobs:
   apply-versions:
     runs-on: ubuntu-latest
     needs: detect-changes
-    if: ${{ needs.detect-changes.outputs.marketplace-bump != 'none' || fromJson(needs.detect-changes.outputs.version-updates).plugins != null && fromJson(needs.detect-changes.outputs.version-updates).plugins | length > 0 }}
+    if: ${{ needs.detect-changes.outputs.marketplace-bump != 'none' || contains(needs.detect-changes.outputs.version-updates, '"patch"') || contains(needs.detect-changes.outputs.version-updates, '"minor"') || contains(needs.detect-changes.outputs.version-updates, '"major"') }}
     steps:
       - uses: actions/checkout@v4
         with:
