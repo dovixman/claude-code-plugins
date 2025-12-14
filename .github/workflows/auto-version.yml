@@ -108,7 +108,7 @@ jobs:
   apply-versions:
     runs-on: ubuntu-latest
     needs: detect-changes
-    if: ${{ needs.detect-changes.outputs.version-updates != '{"plugins": {}, "marketplace": "patch"}' || needs.detect-changes.outputs.marketplace-bump != 'patch' }}
+    if: ${{ needs.detect-changes.outputs.version-updates != '{"plugins":{}, "marketplace":"patch"}' || needs.detect-changes.outputs.marketplace-bump != 'patch' }}
     steps:
       - uses: actions/checkout@v4
         with:
