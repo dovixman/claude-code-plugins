@@ -1,0 +1,5 @@
+{
+  "name": "adaptive-learning",
+  "version": "1.0.0",
+  "description": "Modular adaptive learning system that creates personalized roadmaps, deepens topics through progressive questions, validates understanding with Feynman Technique, and generates practical activities. Use when users request a learning plan, want to dive deeper into topics, validate comprehension, or need practical exercises."
+}
