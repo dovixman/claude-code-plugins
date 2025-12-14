@@ -1,6 +1,6 @@
 # Claude Code Plugins
 
-A collection of plugins for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) to enhance productivity and learning workflows.
+Built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code), by Claude Code, with a human pressing "Enter".
 
 ## Installation
 
