@@ -93,7 +93,3 @@ To add your own plugin repository to the Claude Code marketplace:
    ```bash
    claude plugins:registry:add https://github.com/your-username/your-plugins
    ```
-
-## License
-
-MIT
