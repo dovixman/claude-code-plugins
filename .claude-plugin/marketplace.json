@@ -2,27 +2,30 @@
   "name": "dovixman-plugins",
   "description": "Claude Code plugins for learning, development workflows, problem-solving, and project insights",
   "version": "1.0.0",
-  "owner": "dovixman",
+  "owner": {
+    "name": "dovixman",
+    "url": "https://github.com/dovixman"
+  },
   "plugins": [
     {
       "name": "adaptive-learning",
       "description": "Modular adaptive learning system with roadmaps, deep dive, Feynman technique, practice generation, and teacher mode",
-      "source": "adaptive-learning"
+      "source": "./adaptive-learning"
     },
     {
       "name": "code-workflow",
       "description": "Development workflow tools: TDD, git worktree, commits, QA analysis, testing, and improvements",
-      "source": "code-workflow"
+      "source": "./code-workflow"
     },
     {
       "name": "problem-solving",
       "description": "Problem analysis frameworks including Five Whys root cause analysis",
-      "source": "problem-solving"
+      "source": "./problem-solving"
     },
     {
       "name": "project-insights",
       "description": "Architecture documentation and activity reports (daily, weekly, custom)",
-      "source": "project-insights"
+      "source": "./project-insights"
     }
   ]
 }
