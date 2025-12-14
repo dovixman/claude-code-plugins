@@ -1,5 +1,5 @@
 ---
-argument-hint: [topic]
+argument-hint: "[topic]"
 description: "Generate a personalized learning roadmap with deep context understanding"
 ---
 

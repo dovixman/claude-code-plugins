@@ -1,7 +1,7 @@
 ---
-argument-hint: [--no-verify][--push][--no-split]
+argument-hint: "[--no-verify][--push][--no-split]"
 description: "Commit changes"
-allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git diff:*), Bash(git commit:*), Bash(git log:*)
+allowed-tools: "Bash(git add:*), Bash(git status:*), Bash(git diff:*), Bash(git commit:*), Bash(git log:*)"
 ---
 
 # Context:

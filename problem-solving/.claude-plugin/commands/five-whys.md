@@ -1,5 +1,5 @@
 ---
-argument-hint: [issue_description][depth:5]
+argument-hint: "[issue_description][depth:5]"
 description: "Find the root cause of a problem using the 5-Why's Framework"
 ---
 

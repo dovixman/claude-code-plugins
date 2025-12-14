@@ -1,5 +1,5 @@
 ---
-argument-hint: [feature-description]
+argument-hint: "[feature-description]"
 description: "Implement a feature using TDD"
 ---
 

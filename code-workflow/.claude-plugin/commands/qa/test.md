@@ -1,5 +1,5 @@
 ---
-argument-hint: [file_to_test][existing_test_reference]
+argument-hint: "[file_to_test][existing_test_reference]"
 description: "Create or update tests for a given file"
 ---
 

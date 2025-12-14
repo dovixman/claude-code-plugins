@@ -1,7 +1,7 @@
 ---
-argument-hint: [--feat][--fix][--hotfix] [--base-branch <branch>] [branch_name]
+argument-hint: "[--feat][--fix][--hotfix] [--base-branch <branch>] [branch_name]"
 description: "Create an use a new worktree"
-allowed-tools: Bash(git worktree:*), Bash(git branch:*), Bash(git status:*)
+allowed-tools: "Bash(git worktree:*), Bash(git branch:*), Bash(git status:*)"
 ---
 
 # Context:

@@ -1,5 +1,5 @@
 ---
-argument-hint: [topic]
+argument-hint: "[topic]"
 description: "Feynman Technique: You explain what you learned, I listen and give you detailed feedback"
 ---
 
