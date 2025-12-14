@@ -5,9 +5,12 @@ Modular adaptive learning system that creates personalized roadmaps, deepens top
 ## Installation
 
 ```bash
-claude plugin install /path/to/adaptive-learning
-# or
-claude --plugin-dir /path/to/adaptive-learning
+# From GitHub
+claude plugins:install https://github.com/dovixman/claude-code-plugins/tree/main/adaptive-learning
+
+# Or add the registry first, then install by name
+claude plugins:registry:add https://github.com/dovixman/claude-code-plugins
+claude plugins:install adaptive-learning
 ```
 
 ## Commands

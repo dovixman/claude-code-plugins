@@ -5,9 +5,12 @@ Complete development workflow toolkit covering TDD implementation, git worktree 
 ## Installation
 
 ```bash
-claude plugin install /path/to/code-workflow
-# or
-claude --plugin-dir /path/to/code-workflow
+# From GitHub
+claude plugins:install https://github.com/dovixman/claude-code-plugins/tree/main/code-workflow
+
+# Or add the registry first, then install by name
+claude plugins:registry:add https://github.com/dovixman/claude-code-plugins
+claude plugins:install code-workflow
 ```
 
 ## Commands

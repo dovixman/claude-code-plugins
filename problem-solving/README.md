@@ -5,9 +5,12 @@ Mental models and frameworks for systematic problem-solving and root cause analy
 ## Installation
 
 ```bash
-claude plugin install /path/to/problem-solving
-# or
-claude --plugin-dir /path/to/problem-solving
+# From GitHub
+claude plugins:install https://github.com/dovixman/claude-code-plugins/tree/main/problem-solving
+
+# Or add the registry first, then install by name
+claude plugins:registry:add https://github.com/dovixman/claude-code-plugins
+claude plugins:install problem-solving
 ```
 
 ## Commands

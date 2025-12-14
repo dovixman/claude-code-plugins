@@ -5,9 +5,12 @@ Project documentation and progress tracking tools. Generates architecture docume
 ## Installation
 
 ```bash
-claude plugin install /path/to/project-insights
-# or
-claude --plugin-dir /path/to/project-insights
+# From GitHub
+claude plugins:install https://github.com/dovixman/claude-code-plugins/tree/main/project-insights
+
+# Or add the registry first, then install by name
+claude plugins:registry:add https://github.com/dovixman/claude-code-plugins
+claude plugins:install project-insights
 ```
 
 ## Commands
