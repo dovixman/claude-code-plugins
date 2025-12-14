@@ -28,7 +28,7 @@ jobs:
 
           # Initialize tracking variables
           declare -A PLUGIN_BUMPS
-          MARKETPLACE_BUMP="patch"
+          MARKETPLACE_BUMP="none"
           NEW_PLUGINS_COUNT=0
           REMOVED_PLUGINS_COUNT=0
 
@@ -83,6 +83,9 @@ jobs:
             elif [ "$NEW_PLUGINS_COUNT" -lt 0 ]; then
               MARKETPLACE_BUMP="major"
               echo "  → Plugins removed: marking marketplace for MAJOR bump"
+            else
+              MARKETPLACE_BUMP="patch"
+              echo "  → Existing plugins modified: marking marketplace for PATCH bump"
             fi
           fi
 
@@ -108,11 +111,12 @@ jobs:
   apply-versions:
     runs-on: ubuntu-latest
     needs: detect-changes
-    if: ${{ needs.detect-changes.outputs.version-updates != '{"plugins": {}, "marketplace": "patch"}' || needs.detect-changes.outputs.marketplace-bump != 'patch' }}
+    if: ${{ needs.detect-changes.outputs.marketplace-bump != 'none' || contains(needs.detect-changes.outputs.version-updates, '"patch"') || contains(needs.detect-changes.outputs.version-updates, '"minor"') || contains(needs.detect-changes.outputs.version-updates, '"major"') }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.head_ref }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
