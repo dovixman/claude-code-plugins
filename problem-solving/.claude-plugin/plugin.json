@@ -1,5 +1,5 @@
 {
   "name": "problem-solving",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Mental models and frameworks for systematic problem-solving and root cause analysis. Includes techniques like the Five Whys methodology for drilling down from symptoms to root causes."
 }

@@ -1,5 +1,5 @@
 {
   "name": "project-insights",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Project documentation and progress tracking tools. Generates architecture documentation, and provides work reports (daily, weekly, custom date ranges) based on git history and uncommitted changes."
 }
