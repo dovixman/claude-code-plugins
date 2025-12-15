@@ -1,5 +1,5 @@
 {
   "name": "code-workflow",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Complete development workflow toolkit covering TDD implementation, git worktree management, smart commits, quality assurance testing, and architectural improvements. Streamlines the code-test-commit cycle."
 }
