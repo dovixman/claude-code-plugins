@@ -24,60 +24,7 @@ macOS native notifications for Claude Code using `terminal-notifier`. Get notifi
 
 ## Installation
 
-### 1. Copy hook scripts to user_scripts
-
-```bash
-cp hooks/*.sh ~/.claude/user_scripts/
-chmod +x ~/.claude/user_scripts/*.sh
-```
-
-### 2. Configure hooks in settings.json
-
-Add the following to your `~/.claude/settings.json`:
-
-```json
-{
-  "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "~/.claude/user_scripts/session-start-hook.sh",
-            "timeout": 5
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "~/.claude/user_scripts/terminal-notify.sh stop",
-            "timeout": 10
-          }
-        ]
-      }
-    ],
-    "PermissionRequest": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "~/.claude/user_scripts/terminal-notify.sh permission",
-            "timeout": 10
-          }
-        ]
-      }
-    ]
-  }
-}
-```
-
-### 3. Enable the plugin
-
-The plugin provides slash commands for toggling notifications. Enable it in Claude Code settings.
+Install this plugin from the marketplace or add it to your Claude Code plugins. The hooks are automatically configured.
 
 ## Usage
 
@@ -155,11 +102,11 @@ Settings are stored in `~/.claude/.notification_sessions.json`:
 ### Notifications not appearing
 1. Ensure `terminal-notifier` is installed: `which terminal-notifier`
 2. Check macOS notification settings for Terminal Notifier
-3. Verify hooks are configured in `settings.json`
+3. Verify the plugin is installed and enabled
 
 ### Session toggle not working
 1. Restart Claude Code to trigger SessionStart hook
-2. Ensure SessionStart hook is configured in `settings.json`
+2. Verify the plugin is installed correctly
 
 ### Wrong terminal opens on click
 Set `CLAUDE_NOTIFICATIONS_TERMINAL` in your settings (see Configuration above)
