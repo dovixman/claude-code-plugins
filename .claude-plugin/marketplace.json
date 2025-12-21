@@ -26,6 +26,11 @@
       "name": "project-insights",
       "description": "Architecture documentation and activity reports (daily, weekly, custom)",
       "source": "./project-insights"
+    },
+    {
+      "name": "macos-claude-notifications",
+      "description": "macOS native notifications for Claude Code. Get notified when tasks complete or input is needed.",
+      "source": "./macos-claude-notifications"
     }
   ]
 }
