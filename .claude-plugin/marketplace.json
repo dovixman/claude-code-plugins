@@ -1,7 +1,7 @@
 {
   "name": "dovixman-plugins",
   "description": "Claude Code plugins for learning, development workflows, problem-solving, and project insights",
-  "version": "0.0.1",
+  "version": "0.3.0",
   "owner": {
     "name": "dovixman",
     "url": "https://github.com/dovixman"
@@ -26,6 +26,11 @@
       "name": "project-insights",
       "description": "Architecture documentation and activity reports (daily, weekly, custom)",
       "source": "./project-insights"
+    },
+    {
+      "name": "macos-claude-notifications",
+      "description": "macOS native notifications for Claude Code. Get notified when tasks complete or input is needed.",
+      "source": "./macos-claude-notifications"
     }
   ]
 }
