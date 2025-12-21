@@ -1,0 +1,5 @@
+{
+  "name": "notifications",
+  "version": "0.0.1",
+  "description": "macOS native notifications for Claude Code using terminal-notifier. Get notified when Claude finishes tasks or needs input."
+}
