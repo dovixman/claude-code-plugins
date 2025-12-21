@@ -28,9 +28,9 @@
       "source": "./project-insights"
     },
     {
-      "name": "macos-claude-notifications",
+      "name": "notifications",
       "description": "macOS native notifications for Claude Code. Get notified when tasks complete or input is needed.",
-      "source": "./macos-claude-notifications"
+      "source": "./notifications"
     }
   ]
 }
