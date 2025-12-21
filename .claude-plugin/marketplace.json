@@ -1,7 +1,7 @@
 {
   "name": "dovixman-plugins",
   "description": "Claude Code plugins for learning, development workflows, problem-solving, and project insights",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "owner": {
     "name": "dovixman",
     "url": "https://github.com/dovixman"
